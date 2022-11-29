@@ -29,7 +29,7 @@ namespace Responsi
             try
             {
                 conn.Open();
-                sql = @"select * from st_insert_new (:_nama, :_dept)";
+                sql = @"select * from st_insert_newww (:_nama, :_dept)"; 
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_nama", tbNama.Text);
                 cmd.Parameters.AddWithValue("_dept", tbDept.Text);
